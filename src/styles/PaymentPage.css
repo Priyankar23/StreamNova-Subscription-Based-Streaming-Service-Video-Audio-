@@ -1,0 +1,138 @@
+@charset "UTF-8";
+/* Payment Page */
+.payment-container {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  color: #ffffff;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url('/public/images/back.jpg'); /* Replace with your background image path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Payment Title */
+.payment-title {
+  margin-top: 150px;
+  font-size: 28px;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Subscription Details */
+.subscription-details {
+  margin-top: 20px;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.75);
+  border-radius: 12px;
+  width: 80%;
+  max-width: 600px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5);
+  color: #a1dff5;
+}
+
+.subscription-details ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 10px 0;
+}
+
+.subscription-details li {
+  margin: 8px 0;
+  font-size: 16px;
+}
+
+/* Payment Form */
+.payment-form {
+  margin-top: 20px;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.75);
+  border-radius: 12px;
+  width: 80%;
+  max-width: 600px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.payment-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: #ffffff;
+}
+
+.payment-form input {
+  width: 80%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  background: #ffffff;
+  font-size: 14px;
+}
+
+.payment-form button {
+  padding: 12px 20px;
+  background: linear-gradient(135deg, #143c5a, #1f80e0);
+  border: none;
+  border-radius: 8px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.payment-form button:hover {
+  background: #1e5e8c;
+}
+
+/* Back to Dashboard Button */
+.back-dashboard-button {
+  margin-top: 20px;
+  padding: 12px 20px;
+  background: linear-gradient(135deg, #c8a400, #ff9b00);
+  border: none;
+  border-radius: 8px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.back-dashboard-button:hover {
+  background: #d88f00;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .subscription-details,
+  .payment-form {
+    width: 95%;
+  }
+
+  .payment-title {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .subscription-details,
+  .payment-form {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .payment-form input,
+  .payment-form button,
+  .back-dashboard-button {
+    width: 100%;
+    padding: 12px;
+    font-size: 14px;
+  }
+}

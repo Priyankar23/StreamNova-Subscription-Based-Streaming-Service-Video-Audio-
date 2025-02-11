@@ -1,0 +1,127 @@
+@charset "UTF-8";
+
+/* Subscriptions Page */
+.subscriptions-container {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  color: #ffffff;
+  height: 100vh;
+  width: 100%;
+  margin-right: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url('/public/images/back.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+/* Subscriptions Title */
+.subscriptions-title {
+  margin-top: 150px;
+  font-size: 28px;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Button to Go Back to Dashboard */
+.dashboard-button {
+  margin-top: 20px;
+  padding: 12px 20px;
+  background: linear-gradient(135deg, #143c5a, #1f80e0);
+  border: none;
+  border-radius: 8px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.dashboard-button:hover {
+  background: #1e5e8c;
+}
+
+/* Subscriptions List */
+.subscriptions-list {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 30px;
+  width: 80%;
+  max-width: 600px;
+}
+
+.subscription-item {
+  background: rgba(0, 0, 0, 0.75);
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 12px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.subscription-details {
+  color: #a1dff5;
+  font-size: 16px;
+}
+
+/* Subscription Button */
+.subscription-button {
+  padding: 10px 20px;
+  background: linear-gradient(135deg, #143c5a, #1f80e0);
+  border: none;
+  border-radius: 8px;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.subscription-button:hover {
+  background: #1e5e8c;
+}
+
+/* Renew Button */
+.renew-button {
+  background: linear-gradient(135deg, #c8a400, #ff9b00);
+}
+
+.renew-button:hover {
+  background: #d88f00;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .subscriptions-list {
+    width: 95%;
+  }
+
+  .subscriptions-title {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .subscriptions-list {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .subscription-item {
+    padding: 12px;
+  }
+
+  .subscription-button,
+  .renew-button,
+  .dashboard-button {
+    width: 100%;
+    padding: 12px;
+    font-size: 14px;
+  }
+}

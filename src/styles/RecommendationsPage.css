@@ -1,0 +1,76 @@
+@charset "UTF-8";
+
+
+body {
+    margin: 0;
+    height: 100%;
+    background-image: url('/public/images/back.jpg'); 
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+}
+
+.recommendations-container {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    min-height: 100vh; 
+    padding: 20px;
+    border-radius: 10px; 
+}
+
+.recommendations-container h2 {
+    text-align: center;
+    color: #143c5a;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.recommendations-container button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.recommendations-container button:hover {
+    background-color: #45a049;
+}
+
+.recommendations-container ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.recommendations-container li {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    display: flex;
+    align-items: center;
+}
+
+.recommendations-container img {
+    border-radius: 5px;
+    margin-right: 20px;
+}
+
+.recommendations-container p {
+    margin: 5px 0;
+    padding:20px;
+}
+
+.recommendations-container p strong {
+    color: #333;
+}
+
+.recommendations-container p:last-child {
+    font-size: 0.9rem;
+    color: #777;
+}

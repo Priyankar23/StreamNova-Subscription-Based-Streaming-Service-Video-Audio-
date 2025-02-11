@@ -1,0 +1,115 @@
+/* General Styling */
+.track-page {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #121212, #1f1f1f);
+  color: #ffffff;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.track-title {
+  text-align: center;
+  color: #a1dff5;
+  margin-bottom: 20px;
+}
+
+.track-back-button {
+  background: linear-gradient(135deg, #143c5a, #1f80e0);
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: block;
+  margin: 20px auto;
+}
+
+.track-back-button:hover {
+  background: #1e5e8c;
+}
+
+.track-loading,
+.track-error,
+.track-no-activities {
+  text-align: center;
+  font-size: 18px;
+  color: #cccccc;
+}
+
+/* Table Styling */
+.track-table {
+  width: 100%;
+  max-width: 1200px;
+  margin: 20px auto;
+  border-collapse: collapse;
+  background: rgba(0, 0, 0, 0.85);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.track-table-header {
+  background: linear-gradient(135deg, #1f80e0, #143c5a);
+  color: #ffffff;
+}
+
+.track-table-header th {
+  padding: 15px;
+  text-align: left;
+  font-size: 16px;
+}
+
+.track-table-body .track-table-row {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.track-table-body .track-table-row:nth-child(even) {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.track-table-body .track-table-row td {
+  padding: 12px 15px;
+  font-size: 14px;
+  color: #f0f0f0;
+}
+
+.track-table-body .track-table-row:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .track-back-button {
+    width: 90%;
+  }
+
+  .track-table {
+    font-size: 14px;
+  }
+
+  .track-table-header th,
+  .track-table-body td {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .track-table {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  .track-back-button {
+    font-size: 14px;
+    padding: 8px 15px;
+  }
+
+  .track-title {
+    font-size: 20px;
+  }
+}

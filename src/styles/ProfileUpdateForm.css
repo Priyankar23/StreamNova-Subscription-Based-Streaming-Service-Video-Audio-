@@ -1,0 +1,108 @@
+@charset "UTF-8";
+
+.profile-update {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+ /* Full background gradient */
+  color: #ffffff;
+  height: 100vh; /* Full viewport height */
+  width:100%;/* Full width */
+  margin-right:450px;
+  display: flex;
+  flex-direction: column;
+   /* Center contents vertically */
+  align-items: center;
+  font-family: 'Arial', sans-serif;
+  background-image: url('/public/images/pic.jpg'); /* Add your background image here */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.profile-container {
+	margin-top:150px;
+  text-align: center;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.85);
+  border-radius: 12px;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.profile-container h2 {
+  margin-bottom: 20px;
+  color: #a1dff5;
+  font-size: 24px;
+}
+
+.profile-form input {
+  display: block;
+  width: 90%;
+  margin: 10px auto;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background: #292929;
+  color: #ffffff;
+  font-size: 14px;
+  outline: none;
+}
+
+.profile-form button {
+  display: block;
+  width: 95%;
+  margin-left:10px;
+  
+  margin-top: 10px;
+  padding: 10px;
+  background: linear-gradient(135deg, #143c5a, #1f80e0);
+  border: none;
+  border-radius: 8px;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.profile-form button:hover {
+  background: #1e5e8c;
+}
+
+.back-to-dashboard-btn {
+  margin-top: 20px;
+  padding: 10px;
+  background: linear-gradient(135deg, #143c5a, #1f80e0);
+  border: none;
+  border-radius: 8px;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.back-to-dashboard-btn:hover {
+  background: #1e5e8c;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .profile-container {
+    width: 95%;
+  }
+}
+
+@media (max-width: 480px) {
+  .profile-container {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .profile-form button,
+  .back-to-dashboard-btn {
+    width: 100%;
+  }
+}

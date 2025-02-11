@@ -1,0 +1,103 @@
+@charset "UTF-8";
+
+/* Payment Confirmation Page */
+.confirmation-container {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  color: #ffffff;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url('/public/images/back.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Title Styling */
+.confirmation-title {
+  font-size: 28px;
+  color: #ffffff;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Message Styling */
+.confirmation-message {
+  font-size: 18px;
+  color: #cce7ff;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Subscription Details */
+.confirmation-details {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  color: #a1dff5;
+  font-size: 16px;
+}
+
+.confirmation-detail-item {
+  background: rgba(0, 0, 0, 0.8);
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 8px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Back to Dashboard Button */
+.dashboard-return-button {
+  margin-top: 20px;
+  padding: 12px 20px;
+  background: linear-gradient(135deg, #004a7c, #1f80e0);
+  border: none;
+  border-radius: 8px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.dashboard-return-button:hover {
+  background: #1e5e8c;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .confirmation-title {
+    font-size: 24px;
+  }
+
+  .confirmation-message {
+    font-size: 16px;
+  }
+
+  .dashboard-return-button {
+    width: 100%;
+    padding: 14px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .confirmation-title {
+    font-size: 20px;
+  }
+
+  .confirmation-message {
+    font-size: 14px;
+  }
+
+  .dashboard-return-button {
+    width: 100%;
+    padding: 12px;
+    font-size: 14px;
+  }
+}

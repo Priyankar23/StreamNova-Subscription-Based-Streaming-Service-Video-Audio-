@@ -1,0 +1,108 @@
+@charset "UTF-8";
+/* ContentStreamPage.css */
+
+/* General styles */
+.streaming-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+  
+    color: #333; /* Dark text for readability */
+    padding: 20px;
+}
+
+/* Title styles */
+.streaming-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #2c3e50; /* A dark theme color */
+}
+
+/* Image container for audio */
+.audio-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.audio-image {
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Video player */
+.video-player-container {
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 20px;
+}
+
+video {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Audio player */
+.audio-player-container {
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+audio {
+    width: 80vh;
+    max-width: 600px;
+    outline: none;
+}
+
+/* Fallback message */
+.fallback-message {
+    font-size: 18px;
+    color: #e74c3c; /* Error message in a vibrant red */
+    margin-bottom: 20px;
+}
+
+/* Back button */
+.back-button {
+     padding: 8px 15px;
+  background: linear-gradient(135deg, #143c5a, #1f80e0);
+  border: none;
+  border-radius: 8px;
+  color: #ffffff;
+  width:100px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+}
+
+.back-button:focus {
+    outline: none;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .audio-image {
+        width: 250px;
+        height: 250px;
+    }
+
+    .video-player-container {
+        max-width: 100%;
+    }
+
+    audio {
+        max-width: 100%;
+    }
+}

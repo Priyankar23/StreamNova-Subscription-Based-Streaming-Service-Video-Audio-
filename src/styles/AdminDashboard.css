@@ -1,0 +1,63 @@
+/* AdminDashboard.css */
+body.admin-dashboard {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #141414, #1f1f1f);
+  color: #ffffff;
+  height: 100vh;
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+}
+
+.admin-dashboard-container {
+  text-align: center;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 12px;
+  width: 80%;
+  max-width: 500px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.admin-dashboard-container h2 {
+  font-size: 32px;
+  color: #a1dff5; /* Matches the light blue tone */
+  margin-bottom: 20px;
+}
+
+.admin-dashboard-container button {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #143c5a, #1f80e0);
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.admin-dashboard-container button:hover {
+  background: #1e5e8c;
+}
+
+.admin-dashboard-container button:active {
+  transform: scale(0.95);
+}
+
+.admin-dashboard-container button:last-child {
+  margin-bottom: 0;
+}
+
+.admin-dashboard-container a {
+  color: #a1dff5;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.admin-dashboard-container a:hover {
+  text-decoration: underline;
+}

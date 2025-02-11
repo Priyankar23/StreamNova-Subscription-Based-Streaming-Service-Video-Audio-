@@ -1,0 +1,220 @@
+/* UserDashboard.css */
+.dashboard-page {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+
+    height: 100%;
+    background-image: url('/public/images/Image.png'); /* Add the path to your background image */
+    background-size: cover; /* Ensures the background image covers the entire screen */
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat; /* Ensures the image does not repeat */
+    background-attachment: fixed;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ 
+  
+}
+
+.top-bar {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background: linear-gradient(135deg, #143c5a, #1f80e0);
+  padding: 10px 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* Ensure the top bar stays on top */
+}
+
+.profile-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  background: rgba(0, 0, 0, 0.9);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+}
+
+.dropdown p {
+  margin: 5px 0;
+}
+
+.dropdown button {
+  margin-top: 10px;
+  background: #1f80e0;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.dropdown button:hover {
+  background: #0a66c2;
+}
+
+h2, h3 {
+  color: White;
+  text-align: center;
+}
+
+button {
+  margin: 5px 10px;
+  background: #143c5a;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: #0a66c2;
+}
+
+.genre-section {
+  margin: 20px 0;
+  padding: 10px;
+ height:80vh;
+ 
+ 
+  width:60%;
+ 
+}
+
+.genre-section li{
+	background:none;
+	box-shadow:none;
+	
+}
+
+.genre-section h4 {
+  color: white;
+  margin-bottom: 10px;
+}
+
+.content-list {
+  display: flex;
+
+  flex-direction:row;
+  
+}
+.content-list p{
+
+  color:white;
+ text-align:center;
+ justify-content:center;
+}
+
+.content-list .p1{
+	background: #143c5a;
+  color: white;
+}
+.content-list .p2{
+	padding-top:30px;
+	justify-content:center;
+	height:100px;
+	width:80vh;
+}
+
+.content-item {
+ gap:40px;
+  align-items: center;
+   /* Set a fixed width for each item */
+   display:flex;
+   flex-direction:row;
+}
+.toit{
+	text-align:left;
+	align-items:center;
+	width:100%;
+}
+
+
+.content-item p {
+  margin: 5px 0;
+  text-align: center; /* Center the text */
+}
+
+.content-item button {
+  margin-top: 10px;
+  background-color: #4CAF50;
+    color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.content-item button:hover {
+  background: #0a66c2;
+}
+
+
+
+.toast {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.75);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  z-index: 1000;
+  opacity: 1;
+  transition: opacity 0.5s ease-out;
+}
+
+.toast.fade-out {
+  opacity: 0;
+}
+.content-img{
+	height:30vh;
+}
+.star-icon{
+	height:3vh;
+}
+
+.star{
+	display:flex;
+	flex-direction:row;
+	gap:10px;
+	padding-top:20px;
+	padding-bottom:30px;
+}
+.content-details{
+	color:white;
+	margin-top:40px;
+}
+.title{
+	 background: #143c5a;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  font-size: 14px;
+  width:100px;
+ 
+}
+
